@@ -1,0 +1,6 @@
+<isd-add (add)="handleAdd($event)"></isd-add>
+<ul>
+  <li *ngFor="let task of tasks">
+    <isd-task [task]="task" (delete)="handleDelete($event)"></isd-task>
+  </li>
+</ul>

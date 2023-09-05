@@ -3,13 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'isd-todo',
   template: `
-    <p>
-      todo works!
-    </p>
+    <h2>todo list</h2>
+    <isd-list></isd-list>
   `,
-  styles: [
-  ]
+  styles: [],
 })
-export class TodoComponent {
-
-}
+export class TodoComponent {}

@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodoComponent } from './todo.component';
-import { ListComponent } from './list/list.component';
+import { ListComponent } from './list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AddComponent } from './add/add.component';
+import { AddComponent } from '../add/add.component';
+import { TaskComponent } from '../task/task.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-describe('TodoComponent', () => {
-  let component: TodoComponent;
-  let fixture: ComponentFixture<TodoComponent>;
+describe('ListComponent', () => {
+  let component: ListComponent;
+  let fixture: ComponentFixture<ListComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TodoComponent, ListComponent, AddComponent],
+      declarations: [ListComponent, AddComponent, TaskComponent],
       imports: [HttpClientModule, ReactiveFormsModule],
     });
-    fixture = TestBed.createComponent(TodoComponent);
+    fixture = TestBed.createComponent(ListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

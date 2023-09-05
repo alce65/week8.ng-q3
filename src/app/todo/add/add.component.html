@@ -1,0 +1,8 @@
+<form aria-label="add-task" [formGroup]="addForm" (submit)="handleSubmit($event)">
+  <legend>Añadir tarea</legend>
+  <input type="text" formControlName="title" placeholder="Describe la tarea" required />
+  <input type="text" formControlName="owner" placeholder="Responsable de la tarea" required />
+  <button type="submit">Añadir</button>
+</form>
+
+<!-- {{addForm.value | json}} -->

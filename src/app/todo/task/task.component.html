@@ -1,0 +1,11 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+
+<span>{{task.title}}</span>
+<span>{{task.owner}}</span>
+<span>
+  <input type="checkbox" name="is-completed" [checked]="task.isCompleted">
+  <span role="button" class="button" (click)="handleClick()">
+    🗑️
+  </span>
+</span>
